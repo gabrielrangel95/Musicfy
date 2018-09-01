@@ -1,11 +1,5 @@
-import { Dimensions } from 'react-native';
+import colors from './colors';
+import metrics from './metrics';
+import general from './general';
 
-const { width, height } = Dimensions.get('window');
-
-export default {
-  basePadding: 20,
-  baseMargin: 15,
-  baseRadius: 3,
-  screenWidth: width < height ? width : height,
-  screenHeight: width < height ? height : width,
-};
+export { colors, metrics, general };
