@@ -17,11 +17,8 @@ const Router = createBottomTabNavigator(
       showLabel: true,
       activeTintColor: colors.white,
       style: {
-        backgroundColor: colors.black,
+        backgroundColor: colors.secondary,
       },
-    },
-    navigationOptions: {
-      headerBackground: colors.black,
     },
   },
 );
