@@ -1,21 +1,21 @@
 import React, { Component } from 'react';
 import 'config/ReactotronConfig';
-import { View, Text } from 'react-native';
-import Icon from 'react-native-vector-icons/Entypo';
+import Icon from 'react-native-vector-icons/Ionicons';
+import { CustomHeader } from 'components';
+import { HomeContainer } from './HomeStyle';
 
 class Home extends Component {
   static navigationOptions = {
-    headerTitle: 'Home',
     tabBarIcon: ({ tintColor }) => (
-      <Icon name="home" color={tintColor} size={20} />
+      <Icon name="md-home" color={tintColor} size={20} />
     ),
   };
 
   render() {
     return (
-      <View>
-        <Text>Home</Text>
-      </View>
+      <HomeContainer>
+        <CustomHeader title="Home" />
+      </HomeContainer>
     );
   }
 }
