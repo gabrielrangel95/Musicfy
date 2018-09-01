@@ -7,7 +7,7 @@ import { HomeContainer } from './HomeStyle';
 class Home extends Component {
   static navigationOptions = {
     tabBarIcon: ({ tintColor }) => (
-      <Icon name="md-home" color={tintColor} size={20} />
+      <Icon name="md-home" color={tintColor} size={24} />
     ),
   };
 

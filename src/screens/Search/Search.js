@@ -8,7 +8,7 @@ class Search extends Component {
   static navigationOptions = {
     headerTitle: 'Search',
     tabBarIcon: ({ tintColor }) => (
-      <Icon name="search" color={tintColor} size={20} />
+      <Icon name="search" color={tintColor} size={24} />
     ),
   };
 
