@@ -1,2 +1,2 @@
-export * from './Main/Main';
+export * from './Home/Home';
 export * from './Search/Search';
