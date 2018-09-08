@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import { metrics } from 'styles';
 import Icon from 'react-native-vector-icons/Ionicons';
-import Carousel from 'react-native-snap-carousel';
 
+import { FlatList } from 'react-native';
 import { CustomHeader } from 'components';
 import { HomeContainer } from './HomeStyle';
 import { AlbumCard } from './components';
@@ -291,20 +290,19 @@ class Home extends Component {
     ),
   };
 
+  _keyExtractor = item => item.id;
+
   renderItem = ({ item }) => (<AlbumCard item={item} />)
 
   render() {
     return (
       <HomeContainer>
         <CustomHeader title="Home" />
-        <Carousel
+        <FlatList
           data={albums}
           renderItem={this.renderItem}
-          sliderWidth={metrics.screenWidth}
-          itemWidth={metrics.screenWidth * 0.43}
-          inactiveSlideScale={1}
-          inactiveSlideOpacity={0.7}
-          loop
+          horizontal
+          keyExtractor={this.keyExtractor}
         />
       </HomeContainer>
     );

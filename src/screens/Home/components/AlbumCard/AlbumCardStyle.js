@@ -4,16 +4,16 @@ import { metrics, colors } from 'styles';
 export const AlbumContainer = styled.View`
   display: flex;
   height: ${metrics.screenHeight * 0.2};
-  width: ${metrics.screenWidth * 0.4};
+  width: ${metrics.screenWidth * 0.45};
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding: 12px;
+  padding-left: 24px;
 `;
 
 export const AlbumImage = styled.Image`
-  height: ${metrics.screenHeight * 0.2};
-  width: ${metrics.screenWidth * 0.4};
+  height: 100%;
+  width: 100%;
   margin-bottom: ${metrics.basePadding / 2};
 `;
 
